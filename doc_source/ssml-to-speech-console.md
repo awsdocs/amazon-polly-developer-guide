@@ -19,10 +19,12 @@ In this example we introduce SSML tagging to substitute "World Wide Web Consorti
 1. Type or paste the following text in the text box: 
 
    ```
-   <speak>He was caught up in the game.<break time="1s"/> 
-   In the middle of the 10/3/2014 <sub alias="World Wide Web Consortium">W3C</sub> meeting 
-   he shouted, "Score!" quite loudly. When his boss stared at him, he repeated 
-   <amazon:effect name="whispered">"Score"</amazon:effect> in a whisper.</speak>
+   <speak>
+        He was caught up in the game.<break time="1s"/> 
+        In the middle of the 10/3/2014 <sub alias="World Wide Web Consortium">W3C</sub> meeting 
+        he shouted, "Score!" quite loudly. When his boss stared at him, he repeated 
+        <amazon:effect name="whispered">"Score"</amazon:effect> in a whisper.
+   </speak>
    ```
 
    The SSML tags inform Amazon Polly that the text should be rendered in a specified way\.

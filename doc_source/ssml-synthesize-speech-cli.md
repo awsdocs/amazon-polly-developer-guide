@@ -78,7 +78,9 @@ You can use the `synthesize-speech` command to test the examples in this section
 The following SSML `synthesize-speech` command uses the `<break>` element to add a 300 millisecond delay between the words "Hello" and "World" in the resulting speech\.
 
 ```
-<speak>Hello <break time="300ms"/> World</speak>
+<speak>
+     Hello <break time="300ms"/> World.
+</speak>
 ```
 
 The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
@@ -101,7 +103,9 @@ This element enables you to control pitch, speaking rate, and volume of speech\.
 + The following SSML uses the `<prosody>` element to control volume:
 
   ```
-  <speak><prosody volume="+20dB">Hello world</prosody></speak>
+  <speak>
+       <prosody volume="+20dB">Hello world</prosody>
+  </speak>
   ```
 
   The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
@@ -118,7 +122,9 @@ This element enables you to control pitch, speaking rate, and volume of speech\.
 + The following SSML uses the `<prosody>` element to control pitch:
 
   ```
-  <speak><prosody pitch="x-high">Hello world</prosody></speak>
+  <speak>
+       <prosody pitch="x-high">Hello world.</prosody>
+  </speak>
   ```
 
   The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
@@ -135,7 +141,9 @@ This element enables you to control pitch, speaking rate, and volume of speech\.
 + The following SSML uses the `<prosody>` element to specify the speech rate:
 
   ```
-  <speak><prosody rate="x-fast">Hello world</prosody></speak>
+  <speak>
+       <prosody rate="x-fast">Hello world.</prosody>
+  </speak>
   ```
 
   The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
@@ -152,7 +160,9 @@ This element enables you to control pitch, speaking rate, and volume of speech\.
 + You can specify multiple attributes in a `<prosody>` element, as shown in the following example:
 
   ```
-  <speak><prosody volume="x-loud" pitch="x-high" rate="x-fast">Hello world</prosody></speak>
+  <speak>
+       <prosody volume="x-loud" pitch="x-high" rate="x-fast">Hello world.</prosody>
+  </speak>
   ```
 
   The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
@@ -173,7 +183,9 @@ Play the resulting `speech.mp3` file to verify the synthesized speech\.
 The following synthesize\-speech command uses the ` <amazon:effect name="whispered">` element to say the words "little lamb" in a whispered voice in the resulting speech: 
 
 ```
-<speak> Mary has a <amazon:effect name="whispered">little lamb.</amazon:effect></speak>
+<speak>
+     Mary has a <amazon:effect name="whispered">little lamb.</amazon:effect>
+</speak>
 ```
 
 This effect can be enhanced by slowing the whispered speech slightly using the <prosody> element\.
@@ -197,7 +209,9 @@ Play the resulting `speech.mp3` file to verify the synthesized speech\.
 This element enables you to specify the stress or prominence to apply when speaking a specified word or phrase\.
 
 ```
-<speak><emphasis level="strong">Hello</emphasis> world how are you?</speak>
+<speak>
+     <emphasis level="strong">Hello</emphasis> world how are you?
+</speak>
 ```
 
 The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
@@ -224,7 +238,9 @@ The <say\-as> element enables you to provide information about the type of text 
 For instance, in the following SSML, `<say-as>` indicates that the text 4/6 should be interpreted in a specific way, the attribute `interpret-as="date" format="dm"` indicates it should be said as a date value with the format month/day\. 
 
 ```
-<speak>Today is <say-as interpret-as="date" format="md" >4/6</say-as></speak>
+<speak>
+     Today is <say-as interpret-as="date" format="md" >4/6</say-as>
+</speak>
 ```
 
 This element can also be used to say fractions, telephone numbers, measurement units, and more\.

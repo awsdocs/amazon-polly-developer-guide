@@ -16,6 +16,8 @@ Amazon Polly supports the following SSML:
 
 + [<break>](#break-tag)
 
++ [<emphasis>](#emphasis-tag)
+
 + [<lang>](#lang-tag)
 
 + [<mark>](#custom-tag)
@@ -38,9 +40,11 @@ Amazon Polly supports the following SSML:
 
 + [<amazon:effect name="drc">](#drc-tag)
 
-+ [<amazon:effect name="whispered">](#whispered-tag)
++ [<amazon:effect phonation="soft">](#phonation-tag)
 
 + [<amazon:effect vocal\-tract\-length>](#vocaltractlength-tag)
+
++ [<amazon:effect name="whispered">](#whispered-tag)
 
 Note that any SSML tags in your input text that are unsupported are automatically ignored when Amazon Polly processes it\. 
 
@@ -79,7 +83,32 @@ The following values can be used with the `time` attribute:
 For example:
 
 ```
-<speak>Mary had a little lamb <break time="3s"/>Whose fleece was white as snow.</speak>
+<speak>
+     Mary had a little lamb <break time="3s"/>Whose fleece was white as snow.
+</speak>
+```
+
+## <emphasis><a name="emphasis-tag"></a>
+
+This tag emphasizes the tagged words or phrases\. Emphasizing text changes the rate and volume of the speech\. More emphasis means the text is spoken louder and slower\. Less emphasis is quieter and faster\. The `level` attribute indicates the degree of emphasis that you want to place on the text\.
+
+Three `level` options are available:
+
++ `Strong`: Increases the volume and slows down speaking rate so the speech is louder and slower\.
+
++ `Moderate`: Increases the volume and slows down the speaking rate, but less so than when set to `strong`\. This is the default and is used if no level is provided\.
+
++ `Reduced`: Decrease the volume and speed up the speaking rate\. The speech is softer and faster\.
+
+**Note**  
+The normal speaking rate and volume for a given voice will fall between the `moderate` and `reduced` levels\.
+
+For example:
+
+```
+<speak>
+     I already told you I <emphasis level="strong">really like</emphasis> that person.
+</speak>
 ```
 
 ## <lang><a name="lang-tag"></a>
@@ -95,7 +124,9 @@ For example:
 When the `voice-id` is Joanna \(American English\), run the following:
 
 ```
-<speak>Je ne parle pas français.</speak>
+<speak>
+     Je ne parle pas français.
+</speak>
 ```
 
 Amazon Polly will say this in the Joanna voice without attempting to use a French accent\. 
@@ -103,7 +134,9 @@ Amazon Polly will say this in the Joanna voice without attempting to use a Frenc
 When the same voice is used with the following `<lang>` tab:
 
 ```
-<speak><lang xml:lang="fr-FR">Je ne parle pas français.</lang>.</speak>
+<speak>
+     <lang xml:lang="fr-FR">Je ne parle pas français.</lang>.
+</speak>
 ```
 
 Amazon Polly will pronounce this in the Joanna voice using American\-accented French\.
@@ -113,7 +146,9 @@ However, because Joanna is not a native French voice, pronunciation is based on 
 In another, when the `voice-id` of Giorgio \(Italian\) is used with the following text: 
 
 ```
-<speak>Mi piace Bruce Springsteen.</speak>
+<speak>
+     Mi piace Bruce Springsteen.
+</speak>
 ```
 
 Amazon Polly will say this in the Giorgio voice with no attempt to use a non\-Italian pronunciation\.
@@ -121,7 +156,9 @@ Amazon Polly will say this in the Giorgio voice with no attempt to use a non\-It
 When the same voice is used with the following `<lang>` tab:
 
 ```
-<speak>Mi piace <lang xml:lang="en-US">Bruce Springsteen.</lang></speak>
+<speak>
+     Mi piace <lang xml:lang="en-US">Bruce Springsteen.</lang>
+</speak>
 ```
 
 Amazon Polly will pronounce this in the Giorgio voice using Italian\-accented English\.
@@ -139,7 +176,9 @@ This tag may be anything designated by the user with the following format:
  For example, if the tag name is "animal" and the input text is:
 
 ```
-<speak>Mary had a little <mark name="animal"/>lamb.</speak>
+<speak>
+     Mary had a little <mark name="animal"/>lamb.
+</speak>
 ```
 
 the following SSML metadata might be returned by Amazon Polly
@@ -154,8 +193,8 @@ This tag indicates a paragraph in the text\. This is equivalent to specifying a 
 
 ```
 <speak>
-<p>This is the first paragraph. There should be a pause after this text is spoken.</p> 
-<p>This is the second paragraph.</p> 
+     <p>This is the first paragraph. There should be a pause after this text is spoken.</p> 
+     <p>This is the second paragraph.</p> 
 </speak>
 ```
 
@@ -181,8 +220,8 @@ For instance, the word "pecan" can be pronounced two different ways\. In the fol
 
 ```
 <speak>
-You say, <phoneme alphabet="ipa" ph="pɪˈkɑːn">pecan</phoneme>. 
-I say, <phoneme alphabet="ipa" ph="ˈpi.kæn">pecan</phoneme>.
+     You say, <phoneme alphabet="ipa" ph="pɪˈkɑːn">pecan</phoneme>. 
+     I say, <phoneme alphabet="ipa" ph="ˈpi.kæn">pecan</phoneme>.
 </speak>
 ```
 
@@ -218,13 +257,13 @@ For example, prosody for a passage could be set in the following ways:
 
 ```
 <speak>
-Prosody can be used to change the way words sound. The following words are 
-<prosody volume="x-loud"> quite a bit louder than the rest of this passage. 
-</prosody> Each morning when I wake up, <prosody rate="x-slow">I speak  
-quite slowly and deliberately until I have my coffee.</prosody> I can also  
-change the pitch of my voice using prosody. Do you like <prosody pitch="+5%"> 
-speech with a pitch that is higher,</prosody> or <prosody pitch="-10%"> 
-is a lower pitch preferable?</prosody>
+     Prosody can be used to change the way words sound. The following words are 
+     <prosody volume="x-loud"> quite a bit louder than the rest of this passage. 
+     </prosody> Each morning when I wake up, <prosody rate="x-slow">I speak  
+     quite slowly and deliberately until I have my coffee.</prosody> I can also  
+     change the pitch of my voice using prosody. Do you like <prosody pitch="+5%"> 
+     speech with a pitch that is higher,</prosody> or <prosody pitch="-10%"> 
+     is a lower pitch preferable?</prosody>
 </speak>
 ```
 
@@ -241,9 +280,11 @@ Unlike the `<break strength="strong"/>` tag, this tag needs to enclose the sente
 In this example, the `<s>` tag creates a short pause after both the first and second sentences\. The final sentence has no `<s>` tag but also has a short pause after it because it contains a period\.
 
 ```
-<speak><s>Mary had a little lamb</s> 
-<s>Whose fleece was white as snow</s> 
-And everywhere that Mary went, the lamb was sure to go.</speak>
+<speak>
+     <s>Mary had a little lamb</s> 
+     <s>Whose fleece was white as snow</s> 
+     And everywhere that Mary went, the lamb was sure to go.
+</speak>
 ```
 
 ## <say\-as><a name="say-as-tag"></a>
@@ -282,25 +323,25 @@ The logic underlying the interpretation of each element is language\-specific\. 
 
 ```
 <speak>
-Richard's number is <say-as interpret-as="telephone">2122241555</say-as>
+     Richard's number is <say-as interpret-as="telephone">2122241555</say-as>
 </speak>
 ```
 
 **Fractions**
 
-Amazon Polly will interpret values within the `say-as` having the `interpret-as="fraction"` attribute as common fractions\. The syntax for fractions is any of the following:
+Amazon Polly will interpret values within the `say-as` having the `interpret-as="fraction"` attribute as common fractions\. The following is the syntax for fractions:
 
 + *Fraction*
 
-  Syntax: *cardinal number*/*cardinal number*\. For example: `<say-as interpret-as="fraction">2/9</say-as>` will be pronounced "two ninths"\.
+  Syntax: *cardinal number*/*cardinal number* such as 2/9\.
+
+  For example: `<say-as interpret-as="fraction">2/9</say-as>` is pronounced "two ninths"\.
 
 + *Non\-negative Mixed Number*
 
-  Syntax: *cardinal number*\+*cardinal number*/*cardinal number*\. For example: `<say-as interpret-as="fraction">3+1/2</say-as>` will be pronounced "three and one half"\.
+  Syntax: *cardinal number*\+*cardinal number*/*cardinal number* such as 3 1/2\. 
 
-+ *Negative Mixed Number*
-
-  Syntax: −*cardinal number*−*cardinal number*/*cardinal number*\. For example: `<say-as interpret-as="fraction">−2−3/8</say-as>` will be pronounced "minus two and three eighths"\.
+  For example: `<say-as interpret-as="fraction">3+1/2</say-as>` is pronounced "three and a half"\.
 
 **Dates**
 
@@ -334,7 +375,7 @@ This tag substitutes the pronunciation inside the `alias` attribute for the pron
 
 ```
 <speak>
-My favorite chemical element is <sub alias="mercury">Hg</sub>, it looks cool. 
+     My favorite chemical element is <sub alias="mercury">Hg</sub>, it looks cool. 
 </speak>
 ```
 
@@ -354,7 +395,7 @@ Depending how you intend to use it, the American English pronunciation of the wo
 
 ```
 <speak>
-The present simple form of the word is pronounced <w role="amazon:VB">read</w>, 
+     The present simple form of the word is pronounced <w role="amazon:VB">read</w>, 
 where the past tense or past participle is pronounced <w role="amazon:VBD">read</w>.
 </speak>
 ```
@@ -375,8 +416,8 @@ You can use the `drc` tag with any voice or language supported by Amazon Polly\.
 
 ```
 <speak>
-Some audio is difficult to hear in a moving vehicle, but <amazon:effect name="drc"> this audio 
-is less difficult to hear in a moving vehicle.</amazon:effect>
+     Some audio is difficult to hear in a moving vehicle, but <amazon:effect name="drc"> this audio 
+     is less difficult to hear in a moving vehicle.</amazon:effect>
 </speak>
 ```
 
@@ -390,15 +431,14 @@ As the following graphic shows, the `prosody volume` tag evenly increases the vo
 
 When you use the `drc` and `prosody volume` tags together, Amazon Polly applies the `drc` tag first, increasing the middle\-range sounds \(those near the threshold\)\. It then applies the `prosody volume` tag and further increases the volume of the entire audio track evenly\.
 
-![\[Using the drc tag with a prosody volume tag increases the volume of the middle-range sounds in 
-                        addition to the volume of the entire audio track.\]](http://docs.aws.amazon.com/polly/latest/dg/images/prosody+drc.png)
+![\[Using the drc tag with a prosody volume tag increases the volume of the middle-range sounds in addition to the volume of the entire audio track.\]](http://docs.aws.amazon.com/polly/latest/dg/images/prosody+drc.png)
 
 To use the tags together, nest one inside the other\. For example:
 
 ```
 <speak>
-<prosody volume="loud">This text needs to be understandable and loud. <amazon:effect name="drc">
-This text also needs to be more understandable in a moving car.</amazon:effect></prosody> 
+     <prosody volume="loud">This text needs to be understandable and loud. <amazon:effect name="drc">
+     This text also needs to be more understandable in a moving car.</amazon:effect></prosody> 
 </speak>
 ```
 
@@ -406,6 +446,21 @@ In this text, the `prosody volume` tag increases the volume of the entire passag
 
 **Note**  
 When using the `drc` and `prosody volume` tags together, use standard XML practices for nesting tags\.
+
+## <amazon:effect phonation="soft"><a name="phonation-tag"></a>
+
+This tag indicates that the input text should be spoken in a softer than normal voice rather than as normal speech\. This can be used with any of the voices in the Amazon Polly Text\-to\-Speech portfolio\. It uses the syntax: `<amazon:effect phonation=”soft”>` and is closed with `</amazon:effect>`\.
+
+For example, when using the Matthew voice:
+
+```
+<speak>
+     This is Matthew speaking in my normal voice. <amazon:effect phonation="soft">This 
+     is Matthew speaking in my softer voice.</amazon:effect>
+</speak>
+```
+
+In this case, the first portion of the synthesized speech is spoken with a normal voice, whereas the portion using the `phonation` tag is spoken more softly\.
 
 ## <amazon:effect vocal\-tract\-length><a name="vocaltractlength-tag"></a>
 
@@ -423,12 +478,12 @@ The following example shows how to change the vocal tract length to change timbr
 
 ```
 <speak>
-This is my original voice, without any modifications. <amazon:effect vocal-tract-length="+15%"> 
-Now, imagine that I am much bigger. </amazon:effect> <amazon:effect vocal-tract-length="-15%"> 
-Or, perhaps you prefer my voice when I'm very small. </amazon:effect> You can also control the 
-timbre of my voice by making minor adjustments. <amazon:effect vocal-tract-length="+10%"> 
-For example, by making me sound just a little bigger. </amazon:effect><amazon:effect 
-vocal-tract-length="-10%"> Or, making me sound only somewhat smaller. </amazon:effect> 
+     This is my original voice, without any modifications. <amazon:effect vocal-tract-length="+15%"> 
+     Now, imagine that I am much bigger. </amazon:effect> <amazon:effect vocal-tract-length="-15%"> 
+     Or, perhaps you prefer my voice when I'm very small. </amazon:effect> You can also control the 
+     timbre of my voice by making minor adjustments. <amazon:effect vocal-tract-length="+10%"> 
+     For example, by making me sound just a little bigger. </amazon:effect><amazon:effect 
+     vocal-tract-length="-10%"> Or, making me sound only somewhat smaller. </amazon:effect> 
 </speak>
 ```
 
@@ -440,13 +495,13 @@ The following example shows how to combine tags\.
 
 ```
 <speak> 
-The pitch and timbre of a person's voice are connected in human speech.
-<amazon:effect vocal-tract-length="-15%"> If you are going to reduce the vocal tract length, 
-</amazon:effect><amazon:effect vocal-tract-length="-15%"> <prosody pitch="+20%"> you 
-might consider increasing the pitch, too. </prosody></amazon:effect>  
-<amazon:effect vocal-tract-length="+15%"> If you choose to lengthen the vocal tract, 
-</amazon:effect> <amazon:effect vocal-tract-length="+15%"> <prosody pitch="-10%"> 
-you might also want to lower the pitch. </prosody></amazon:effect>
+     The pitch and timbre of a person's voice are connected in human speech.
+     <amazon:effect vocal-tract-length="-15%"> If you are going to reduce the vocal tract length, 
+     </amazon:effect><amazon:effect vocal-tract-length="-15%"> <prosody pitch="+20%"> you 
+     might consider increasing the pitch, too. </prosody></amazon:effect>  
+     <amazon:effect vocal-tract-length="+15%"> If you choose to lengthen the vocal tract, 
+     </amazon:effect> <amazon:effect vocal-tract-length="+15%"> <prosody pitch="-10%"> 
+     you might also want to lower the pitch. </prosody></amazon:effect>
 </speak>
 ```
 
@@ -458,8 +513,8 @@ For example:
 
 ```
 <speak>
-<amazon:effect name="whispered">If you make any noise, </amazon:effect> 
-she said, <amazon:effect name="whispered">they will hear us.</amazon:effect>
+     <amazon:effect name="whispered">If you make any noise, </amazon:effect> 
+     she said, <amazon:effect name="whispered">they will hear us.</amazon:effect>
 </speak>
 ```
 
@@ -471,9 +526,9 @@ For example:
 
 ```
 <speak>
-When any voice is made to whisper, <amazon:effect name="whispered">
-<prosody rate="-10%">the sound is slower and quieter than normal speech
-</prosody></amazon:effect>
+     When any voice is made to whisper, <amazon:effect name="whispered">
+     <prosody rate="-10%">the sound is slower and quieter than normal speech
+     </prosody></amazon:effect>
 </speak>
 ```
 

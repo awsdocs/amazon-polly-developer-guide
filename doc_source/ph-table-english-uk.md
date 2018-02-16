@@ -22,7 +22,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | m | m | bilabial nasal | **m**ouse | p | 
 | m̩ | m= | syllabic bilabial nasal | anth**em** | p | 
 | n | n | alveolar nasal | **n**ap | t | 
-| n̩ | n= | syllabic alveolar nasal | **n**ap | t | 
+| n̩ | n= | syllabic alveolar nasal | butto**n** | t | 
 | ŋ | N | velar nasal | thi**ng** | k | 
 | p | p | voiceless bilabial plosive | **p**in | p | 
 | ɹ | r\\ | alveolar approximant | **r**ed | r | 
@@ -49,7 +49,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | i: | i | long close front unrounded vowel | fl**ee**ce | i | 
 | ɪ | I | near\-close near\-front unrounded vowel | k**i**t | i | 
 | ɪə | I@ | diphthong | n**ear** | i | 
-| ɔː | OI | long open\-mid back rounded vowel | th**ou**ght | O | 
+| ɔː | O: | long open\-mid back rounded vowel | th**ou**ght | O | 
 | ɔɪ | OI | Diphthong | ch**oi**ce | O | 
 | ɒ | Q | open back rounded vowel | l**o**t | O | 
 | u: | u: | long close\-back rounded vowel | g**oo**se | u | 

@@ -1,7 +1,7 @@
 # Amazon Polly Developer Guide
 
 -----
-*****Copyright &copy; 2017 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2018 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -69,14 +69,6 @@ Amazon's trademarks and trade dress may not be used in
       + [Using the GetLexicon Operation](gs-get-lexicon.md)
       + [Using the ListLexicons Operations](gs-list-lexicons.md)
       + [Using the DeleteLexicon Operation](gs-delete-lexicon.md)
-+ [Creating Longer Audio Files](creating-longer-audio-files.md)
-   + [How Polly-batch-processor Works](how-polly-batch-works.md)
-   + [Polly-batch-processor Resources](polly-batch-processor-resources.md)
-      + [Polly-batch-processor Components](polly-batch-processor-components.md)
-      + [AWS Batch Resources](batch-resources-1.md)
-   + [Launching Polly-batch-processor](launching-polly-batch.md)
-   + [Converting a Text File to Audio](converting-text-file-to-audio.md)
-   + [Cleaning Up](cleaning-up.md)
 + [Code and Application Examples](samples-and-examples.md)
    + [Sample Code](sample-code-overall.md)
       + [Java Samples](java-samples-overall.md)
@@ -99,6 +91,9 @@ Amazon's trademarks and trade dress may not be used in
       + [Java Example](examples-java.md)
       + [iOS Example](examples-ios.md)
       + [Android Example](examples-android.md)
++ [WordPress Plugin for Amazon Polly](plugin.md)
+   + [Installing the Plugin](plugin-install.md)
+   + [Storing Audio Files](pollycast.md)
 + [Amazon Polly Reference](references-polly.md)
    + [Available Voices](voicelist.md)
    + [Languages Supported by Amazon Polly](SupportedLanguage.md)

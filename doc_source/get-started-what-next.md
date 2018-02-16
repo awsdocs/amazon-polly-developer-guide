@@ -71,7 +71,7 @@ if sys.platform == "win32":
 else:
     # the following works on Mac and Linux. (Darwin = mac, xdg-open = linux).
     opener = "open" if sys.platform == "darwin" else "xdg-open"
-subprocess.call([opener, output])
+    subprocess.call([opener, output])
 ```
 
 For additional examples including an example application, see [Example Applications](examples-for-using-polly.md)\.

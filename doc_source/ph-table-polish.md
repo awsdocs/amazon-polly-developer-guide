@@ -11,7 +11,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | b | b | voiced bilabial plosive | **b**obas, **b**elka | p | 
 | d | d | voiced alveolar plosive | **d**ar, **d**o | t | 
 | d͡z | dz | voiced alveolar affricate | **dz**won, wi**dz**owie | s | 
-| d͡ʑ | dz\\ | voiced alveolo\-palatal affricate | **dź**więk, łó**dź** | J | 
+| d͡ʑ | dz\\ | voiced alveolo\-palatal affricate | **dź**więk | J | 
 | d͡ʐ | dz` | voiced retroflex affricate | **dż**em, **dż**ungla | S | 
 | f | f | voiceless labiodental fricative | **f**urtka, **f**ilm | f | 
 | g | g | voiced velar plosive | **g**azeta, wa**g**a | k | 
@@ -20,7 +20,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | k | k | voiceless velar plosive | **k**ura, mare**k** | k | 
 | l | l | alveolar lateral approximant | **l**ipa, a**l**icja | t | 
 | m | m | bilabial nasal | **m**atka, **m**olo | p | 
-| n | n | alveolar nasal | **n**orka, **n**ie | t | 
+| n | n | alveolar nasal | **n**orka | t | 
 | ɲ | J | palatal nasal | ko**ń**, toru**ń** | J | 
 | p | p | voiceless bilabial plosive | **p**ora, sto**p** | p | 
 | r | r | alveolar trill | **r**ok, pa**r**k | r | 
@@ -33,7 +33,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | t͡ʂ | ts` | voiceless retroflex affricate | **cz**as, ra**cz**ej | S | 
 | v | v | voiced labiodental fricative | **w**orek, me**w**a | f | 
 | w | w | labial\-velar approximant | **ł**aska, ma**ł**o | u | 
-| z | z | voiced alveolar fricative | **z**ero, be**z** | s | 
+| z | z | voiced alveolar fricative | **z**ero | s | 
 | ʑ | z\\ | voiced alveolo\-palatal fricative | **ź**rebię, bieli**ź**nie | J | 
 | ʐ | z` | voiced retroflex fricative | **ż**ar, **ż**ona | S | 
 |  **Vowels**  | 
