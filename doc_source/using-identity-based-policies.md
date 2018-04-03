@@ -55,7 +55,7 @@ You don't need to allow minimum console permissions for users that are making ca
 To use the Amazon Polly console, you need to grant permissions to all the Amazon Polly APIs\. There are no additional permissions needed\. The following permissions policy is all that is needed to use the Amazon Polly console\.
 
 ```
-}
+{
 "Version": "2012-10-17",
    "Statement": [{
       "Sid": "Console-AllowAllPollyActions",
