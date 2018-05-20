@@ -34,17 +34,17 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | z | z | voiced alveolar fricative | **v**er | s | 
 | ʒ | Z | voiced postalveolar fricative | a**z**ık | S | 
 |  **Vowels**  | 
-| ø | 2 | close\-mid front rounded vowel | g**ö**l | 0 | 
-| œ | 9 | open\-mid front rounded vowel | banliy**ö** | O | 
-| a | a | open front unrounded vowel | k**a**l | a | 
-| a: | a: | long open front unrounded vowel | d**a**v**a**cı | a | 
+| ø | 2 | close\-mid near-front rounded vowel | g**ö**l | 0 | 
+| œ | 9 | open\-mid near-front rounded vowel | banliy**ö** | O | 
+| ä | a_ | open central-back unrounded vowel | k**a**l | a | 
+| ɑ: | A: | long open back unrounded vowel | d**a**v**a**cı | a | 
 | æ | \{ | near\-open front unrounded vowel | özl**e**m, güv**e**nlik, gür**e**l, som**e**rsault | a | 
 | e | e | close\-mid front unrounded vowel | k**e**çi | e | 
 | ɛ | E | open\-mid front unrounded vowel | ded**e** | E | 
 | i | i | close front unrounded vowel | b**i**r | i | 
 | i: | i: | long close front unrounded vowel | **i**zah | i | 
 | ɪ | I | near\-close near\-front unrounded vowel | keç**i** | i | 
-| ɯ | M | close back unrounded vowel | k**ı**l | i | 
+| ɯ | M | close central-back unrounded vowel | k**ı**l | i | 
 | o | o | close\-mid back rounded vowel | k**o**l | o | 
 | o: | o: | long close\-mid back rounded vowel | d**o**lar | o | 
 | u | u | close back rounded vowel | d**u**r**u**m | u | 
