@@ -31,8 +31,8 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | t | t | voiceless alveolar plosive | ü**t**ü | t | 
 | t͡ʃ | tS | voiceless postalveolar affricate | **ç**aba | S | 
 | v | v | voiced labiodental fricative | ek**v**ator, kah**v**eci, ak**v**aryum, is**v**eçli, teş**v**iki, cet**v**el | f | 
-| z | z | voiced alveolar fricative | **v**er | s | 
-| ʒ | Z | voiced postalveolar fricative | a**z**ık | S | 
+| z | z | voiced alveolar fricative | a**z**ık | z | 
+| ʒ | Z | voiced postalveolar fricative | **j**ale | j | 
 |  **Vowels**  | 
 | ø | 2 | close\-mid near-front rounded vowel | g**ö**l | 0 | 
 | œ | 9 | open\-mid near-front rounded vowel | banliy**ö** | O | 
