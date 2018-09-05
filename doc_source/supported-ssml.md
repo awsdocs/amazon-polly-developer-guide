@@ -94,11 +94,11 @@ This tag emphasizes the tagged words or phrases\. Emphasizing text changes the r
 
 Three `level` options are available:
 
-+ `Strong`: Increases the volume and slows down speaking rate so the speech is louder and slower\.
++ `strong`: Increases the volume and slows down speaking rate so the speech is louder and slower\.
 
-+ `Moderate`: Increases the volume and slows down the speaking rate, but less so than when set to `strong`\. This is the default and is used if no level is provided\.
++ `moderate`: Increases the volume and slows down the speaking rate, but less so than when set to `strong`\. This is the default and is used if no level is provided\.
 
-+ `Reduced`: Decrease the volume and speed up the speaking rate\. The speech is softer and faster\.
++ `reduced`: Decrease the volume and speed up the speaking rate\. The speech is softer and faster\.
 
 **Note**  
 The normal speaking rate and volume for a given voice will fall between the `moderate` and `reduced` levels\.
