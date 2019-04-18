@@ -28,7 +28,7 @@ If you use "\-" \(a hyphen\) as a substitute for a bullet point, in some languag
 
 In English, Amazon Polly renders "and/or" in speech as "and or\." Currently, this rule isn't available in other languages\. In languages other than English, Amazon Polly renders "yes/no" as "yes slash no\." If you want to change this behavior, you can use a lexicon entry\. For more information, see [Managing Lexicons](managing-lexicons.md)\. 
 
-**Q: When I use text from an existing source in order to synthesize speach using the AWS CLI on a Linux machine, some UTF\-8 characters do not seem work with Amazon Polly, even though the same characters seem to work properly using the Console\. What is happening?**
+**Q: When I use text from an existing source in order to synthesize speech using the AWS CLI on a Linux machine, some UTF\-8 characters do not seem work with Amazon Polly, even though the same characters seem to work properly using the Console\. What is happening?**
 
 This is based in how the Unix Shell handles Unicode and isn't a Amazon Polly\-specific problem\. Two options are available: you can find the problem characters and replace them in the input text, or you can u tilize an alternate means of accessing Amazon Polly that does not experience this issue, such as the PHP interface\. This is a known issue that we are working to address and only a few uncommon unicode characters have this issue\. 
 
