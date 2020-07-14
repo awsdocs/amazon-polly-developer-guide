@@ -15,9 +15,9 @@ In the [AWS Management Console](https://console.aws.amazon.com/), create an IAM 
 ```
 {
     "Version": "2012-10-17",
-    "Statement": [use
+    "Statement": [
         {
-            "Sid": “Permissions1”,
+            "Sid": "Permissions1",
             "Effect": "Allow",
             "Action": [
                 "polly:SynthesizeSpeech",
@@ -27,14 +27,14 @@ In the [AWS Management Console](https://console.aws.amazon.com/), create an IAM 
            "Resource": "*"
         },
         {
-            "Sid": "Permissions2”,
+            "Sid": "Permissions2",
             "Effect": "Allow",
             "Action": [
                 "s3:ListBucket",
                 "s3:GetBucketAcl",
                 "s3:GetBucketPolicy",
-                "s3:PutObject”,
-                                "s3:DeleteObject”,
+                "s3:PutObject",
+                "s3:DeleteObject",
                 "s3:CreateBucket",
                 "s3:PutObjectAcl"
             ],
