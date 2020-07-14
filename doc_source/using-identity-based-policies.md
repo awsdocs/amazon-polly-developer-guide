@@ -23,9 +23,8 @@ The following shows an example of a permissions policy\.
          "polly:DeleteLexicon",
          "polly:ListLexicons"],
       "Resource": "*"
-      }
-   ],
-    "Statement": [{
+      },
+      {
       "Sid": "NoOverrideMyLexicons",
       "Effect": "Deny",
       "Action": [
@@ -55,7 +54,7 @@ You don't need to allow minimum console permissions for users that are making ca
 To use the Amazon Polly console, you need to grant permissions to all the Amazon Polly APIs\. There are no additional permissions needed\. The following permissions policy is all that is needed to use the Amazon Polly console\.
 
 ```
-}
+{
 "Version": "2012-10-17",
    "Statement": [{
       "Sid": "Console-AllowAllPollyActions",
@@ -134,7 +133,7 @@ The following permissions policy grants the user permissions to perform all acti
          "polly:SynthesizeSpeech",
          "polly:ListLexicons"],
       "Resource": "*"
-      }
+      },
       {
       "Sid": "DenyDeleteLexicon",
       "Effect": "Deny",
