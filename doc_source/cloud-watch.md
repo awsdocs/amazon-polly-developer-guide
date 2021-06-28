@@ -2,7 +2,7 @@
 
 When you interact with Amazon Polly, it sends the following metrics and dimensions to CloudWatch every minute\. You can use the following procedures to view the metrics for Amazon Polly\.
 
-You can monitor Amazon Polly using CloudWatch, which collects and processes raw data from Amazon Polly into readable, near real\-time metrics\. These statistics are recorded for a period of two weeks, so that you can access `historical information` and gain a better perspective on how your web application or service is performing\. By default, Amazon Polly metric data is sent to CloudWatch in 1 minute intervals\. For more information, see [What Is Amazon CloudWatch](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) in the Amazon *CloudWatch User Guide*\.
+You can monitor Amazon Polly using CloudWatch, which collects and processes raw data from Amazon Polly into readable, near real\-time metrics\. These statistics are recorded for a period of two weeks, so that you can access `historical information` and gain a better perspective on how your web application or service is performing\. By default, Amazon Polly metric data is sent to CloudWatch in 1 minute intervals\. For more information, see [What Is Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) in the Amazon *CloudWatch User Guide*\.
 
 ## Getting CloudWatch Metrics \(Console\)<a name="cloud-watch-metrics-console"></a>
 
@@ -47,7 +47,7 @@ The preceding command returns a list of Amazon Polly metrics similar to the foll
         }
 ```
 
-For more information, see [GetMetricStatistics](http://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html) in the *Amazon CloudWatch API Reference*\.
+For more information, see [GetMetricStatistics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricStatistics.html) in the *Amazon CloudWatch API Reference*\.
 
 ## Amazon Polly Metrics<a name="polly-metrics"></a>
 

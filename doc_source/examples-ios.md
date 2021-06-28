@@ -2,9 +2,10 @@
 
 The following example uses the iOS SDK for Amazon Polly to read the specified text using a voice selected from a list of voices\.
 
-The code shown here covers the major tasks but does not handle errors\. For the complete code, see [AWS SDK for iOS Amazon Polly demo](https://github.com/awslabs/aws-sdk-ios-samples/tree/master/Polly-Sample/Swift)\.
+The code shown here covers the major tasks but does not handle errors\. For the complete code, see [AWS Mobile SDK for iOS Amazon Polly demo](https://github.com/awslabs/aws-sdk-ios-samples/tree/master/Polly-Sample/Swift)\.
 
 **Initialize**  
+
 
 ```
 // Region of Amazon Polly.
@@ -22,6 +23,7 @@ var audioPlayer = AVPlayer()
 ```
 
 **Get List of Available Voices**  
+
 
 ```
 // Use the configuration as default
@@ -44,6 +46,7 @@ task.continue(successBlock: { (awsTask: AWSTask) -> Any? in
 ```
 
 **Synthesize Speech**  
+
 
 ```
 // First, Amazon Polly requires an input, which we need to prepare.

@@ -1,6 +1,6 @@
 # ListLexicons<a name="API_ListLexicons"></a>
 
-Returns a list of pronunciation lexicons stored in an AWS Region\. For more information, see [Managing Lexicons](http://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html)\.
+Returns a list of pronunciation lexicons stored in an AWS Region\. For more information, see [Managing Lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html)\.
 
 ## Request Syntax<a name="API_ListLexicons_RequestSyntax"></a>
 
@@ -10,10 +10,11 @@ GET /v1/lexicons?NextToken=NextToken HTTP/1.1
 
 ## URI Request Parameters<a name="API_ListLexicons_RequestParameters"></a>
 
-The request requires the following URI parameters\.
+The request uses the following URI parameters\.
 
- ** NextToken **   
-An opaque pagination token returned from previous `ListLexicons` operation\. If present, indicates where to continue the list of lexicons\.
+ ** [NextToken](#API_ListLexicons_RequestSyntax) **   <a name="polly-ListLexicons-request-NextToken"></a>
+An opaque pagination token returned from previous `ListLexicons` operation\. If present, indicates where to continue the list of lexicons\.  
+Length Constraints: Minimum length of 0\. Maximum length of 4096\.
 
 ## Request Body<a name="API_ListLexicons_RequestBody"></a>
 
@@ -49,13 +50,14 @@ If the action is successful, the service sends back an HTTP 200 response\.
 
 The following data is returned in JSON format by the service\.
 
- ** Lexicons **   
+ ** [Lexicons](#API_ListLexicons_ResponseSyntax) **   <a name="polly-ListLexicons-response-Lexicons"></a>
 A list of lexicon names and attributes\.  
 Type: Array of [LexiconDescription](API_LexiconDescription.md) objects
 
- ** NextToken **   
+ ** [NextToken](#API_ListLexicons_ResponseSyntax) **   <a name="polly-ListLexicons-response-NextToken"></a>
 The pagination token to use in the next request to continue the listing of lexicons\. `NextToken` is returned only if the response is truncated\.  
-Type: String
+Type: String  
+Length Constraints: Minimum length of 0\. Maximum length of 4096\.
 
 ## Errors<a name="API_ListLexicons_Errors"></a>
 
@@ -70,21 +72,12 @@ HTTP Status Code: 500
 ## See Also<a name="API_ListLexicons_SeeAlso"></a>
 
 For more information about using this API in one of the language\-specific AWS SDKs, see the following:
-
-+  [AWS Command Line Interface](http://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for \.NET](http://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for C\+\+](http://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for Go](http://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for Java](http://docs.aws.amazon.com/goto/SdkForJava/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for JavaScript](http://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for PHP V3](http://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for Python](http://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/ListLexicons) 
-
-+  [AWS SDK for Ruby V2](http://docs.aws.amazon.com/goto/SdkForRubyV2/polly-2016-06-10/ListLexicons) 
++  [AWS Command Line Interface](https://docs.aws.amazon.com/goto/aws-cli/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for \.NET](https://docs.aws.amazon.com/goto/DotNetSDKV3/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for Go](https://docs.aws.amazon.com/goto/SdkForGoV1/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for JavaScript](https://docs.aws.amazon.com/goto/AWSJavaScriptSDK/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/polly-2016-06-10/ListLexicons) 
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/polly-2016-06-10/ListLexicons) 

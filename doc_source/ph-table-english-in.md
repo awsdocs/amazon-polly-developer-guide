@@ -2,6 +2,8 @@
 
 The following table lists the International Phonetic Alphabet \(IPA\) phonemes, the Extended Speech Assessment Methods Phonetic Alphabet \(X\-SAMPA\) symbols, and the corresponding visemes for the Indian English voice supported by Amazon Polly\.
 
+For additional phonemes used in conjunction with Indian English, see [Hindi \(hi\-IN\)](ph-table-hindi.md)\. 
+
 
 **Phoneme/Viseme Table**  
 
@@ -56,3 +58,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | ʊ | U | near\-close near\-back rounded vowel | f**oo**t | u | 
 | ʊə | U@ | diphthong | c**u**re | u | 
 | ʌ | V | Open\-mid\-back unrounded vowel | str**u**t | E | 
+|  **Additional Symbols**  | 
+| ˈ | " | primary stress | Ala**ba**ma |  | 
+| ˌ | % | secondary stress | **A**labama |  | 
+| \. | \. | syllable boundary | A\.la\.ba\.ma |  | 

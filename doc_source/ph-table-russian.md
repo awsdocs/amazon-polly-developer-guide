@@ -53,4 +53,4 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | i | i | close front unrounded vowel | од**и**н, ч**е**тыре | i | 
 | o | o | close\-mid back rounded vowel | к**о**т | o | 
 | u | u | close back rounded vowel | м**у**ж, вь**ю**га | u | 
-| ɨ | 1 | close central unrounded vowel | м**ы**ш | i | 
+| ɨ | 1 | close central unrounded vowel | м**ы**шь | i | 

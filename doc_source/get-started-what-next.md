@@ -1,19 +1,16 @@
-# What's Next?<a name="get-started-what-next"></a>
+# Python Examples<a name="get-started-what-next"></a>
 
-This guide provides additional examples, some of which are Python code examples that use AWS SDK for Python \(Boto\) to make API calls to Amazon Polly\. We recommend you to set up Python and test the example code provided in the following section\. For additional examples, see [Example Applications](examples-for-using-polly.md)\.
+This guide provides additional examples, some of which are Python code examples that use AWS SDK for Python \(Boto\) to make API calls to Amazon Polly\. We recommend that you set up Python and test the example code provided in the following section\. For additional examples, see [Example Applications](examples-for-using-polly.md)\.
 
-## Set Up Python and Test an Example<a name="get-started-setup-python"></a>
+## Set Up Python and Test an Example \(SDK\)<a name="get-started-setup-python"></a>
 
-To test the Python example code, you need the AWS SDK for Python \(Boto\)\. For instruction, see [AWS SDK for Python \(Boto3\)](https://aws.amazon.com/sdk-for-python/)\.
+To test the Python example code, you need the AWS SDK for Python \(Boto\)\. For instruction, see [AWS SDK for Python \(Boto3\) ](https://aws.amazon.com/sdk-for-python/)\.
 
-**To test Example Python Code**
+**To test the example Python code**
 
-The following Python code example does the following:
-
+The following Python code example performs the following actions:
 + Uses the AWS SDK for Python \(Boto\) to send a `SynthesizeSpeech` request to Amazon Polly \(by providing simple text as input\)\. 
-
-+ Accesses the resulting audio stream in the response and saves the audio to a file on your local disk \(`speech.mp3`\)\.
-
++ Accesses the resulting audio stream in the response and saves the audio to a file \(`speech.mp3`\) on your local disk\.
 + Plays the audio file with the default audio player for your local system\.
 
 Save the code to a file \(example\.py\) and run it\.
@@ -44,16 +41,16 @@ except (BotoCoreError, ClientError) as error:
 
 # Access the audio stream from the response
 if "AudioStream" in response:
-    # Note: Closing the stream is important as the service throttles on the
+    # Note: Closing the stream is important because the service throttles on the
     # number of parallel connections. Here we are using contextlib.closing to
     # ensure the close method of the stream object will be called automatically
     # at the end of the with statement's scope.
-    with closing(response["AudioStream"]) as stream:
+        with closing(response["AudioStream"]) as stream:
         output = os.path.join(gettempdir(), "speech.mp3")
 
         try:
             # Open a file for writing the output as a binary stream
-            with open(output, "wb") as file:
+                with open(output, "wb") as file:
                 file.write(stream.read())
         except IOError as error:
             # Could not write to file, exit gracefully
@@ -69,7 +66,7 @@ else:
 if sys.platform == "win32":
     os.startfile(output)
 else:
-    # the following works on Mac and Linux. (Darwin = mac, xdg-open = linux).
+    # The following works on macOS and Linux. (Darwin = mac, xdg-open = linux).
     opener = "open" if sys.platform == "darwin" else "xdg-open"
     subprocess.call([opener, output])
 ```

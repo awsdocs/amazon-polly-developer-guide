@@ -2,9 +2,10 @@
 
 The following example uses the Android SDK for Amazon Polly to read the specified text using a voice selected from a list of voices\.
 
-The code shown here covers the major tasks but does not handle errors\. For the complete code, see the [AWS SDK for Android Amazon Polly demo](https://github.com/awslabs/aws-sdk-android-samples/tree/master/PollyDemo)\.
+The code shown here covers the major tasks but does not handle errors\. For the complete code, see the [AWS Mobile SDK for Android Amazon Polly demo](https://github.com/awslabs/aws-sdk-android-samples/tree/master/PollyDemo)\.
 
 **Initialize**  
+
 
 ```
 // Cognito pool ID. Pool needs to be unauthenticated pool with
@@ -27,6 +28,7 @@ AmazonPollyPresigningClient client = new AmazonPollyPresigningClient(credentials
 
 **Get List of Available Voices**  
 
+
 ```
 // Create describe voices request.
 DescribeVoicesRequest describeVoicesRequest = new DescribeVoicesRequest();
@@ -37,6 +39,7 @@ List<Voice> voices = describeVoicesResult.getVoices();
 ```
 
 **Get URL for Audio Stream**  
+
 
 ```
 // Create speech synthesis request.
@@ -55,6 +58,7 @@ URL presignedSynthesizeSpeechUrl =
 ```
 
 **Play Synthesized Speech**  
+
 
 ```
 // Use MediaPlayer: https://developer.android.com/guide/topics/media/mediaplayer.html

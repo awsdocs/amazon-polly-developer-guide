@@ -4,7 +4,7 @@ The following code sample shows how to use Java\-based applications to synthesiz
 
 For more information on this functionality, see [Speech Marks ](speechmarks.md)\.
 
-For more information on the API, see the reference for [http://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html](http://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html) API\. 
+For more information on the API, see the reference for [https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html](https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html) API\. 
 
 ```
 package com.amazonaws.polly.samples;

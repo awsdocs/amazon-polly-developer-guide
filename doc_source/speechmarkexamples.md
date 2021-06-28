@@ -44,11 +44,8 @@ When you make this request, Amazon Polly returns the following in the \.txt file
 ```
 
 In this output, each part of the text is broken out in terms of speech marks:
-
 + The sentence "Mary had a little lamb\."
-
 + Each word in the text: "Mary", "had", "a", "little", and "lamb\."
-
 + The viseme for each sound in the corresponding audio stream: "p", "E", "r", "i", and so on\. For more information on visemes see [Visemes and Amazon Polly](viseme.md)\.
 
 ## Example 2: Speech Marks with SSML<a name="sp-mks-example2"></a>

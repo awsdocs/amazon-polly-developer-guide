@@ -1,8 +1,8 @@
 # ListLexicons<a name="ListLexiconsSample"></a>
 
-The following Java code sample shows how to use Java\-based applications to produce a list of pronunciation lexicons stored in a AWS Region\. 
+The following Java code sample shows how to use Java\-based applications to produce a list of pronunciation lexicons stored in an AWS Region\. 
 
-For more information on this operation, see the reference for the [http://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html](http://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html) API\. 
+For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html](https://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html) API\. 
 
 ```
 package com.amazonaws.polly.samples;

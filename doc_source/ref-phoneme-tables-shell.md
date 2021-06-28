@@ -1,8 +1,12 @@
-# Phoneme/Viseme Tables for Supported Languages<a name="ref-phoneme-tables-shell"></a>
-
-This section provides phoneme/viseme tables for the languages supported by Amazon Polly\. 
+# Phoneme and Viseme Tables for Supported Languages<a name="ref-phoneme-tables-shell"></a>
 
 
+
+The following tables list the phonemes for the languages supported by Amazon Polly, along with examples and the corresponding visemes\. 
+
+**Topics**
++ [Arabic \(arb\)](ph-table-arabic.md)
++ [Chinese, Mandarin \(cmn\-CN\)](ph-table-mandarin.md)
 + [Danish \(da\-DK\)](ph-table-danish.md)
 + [Dutch \(nl\-NL\)](ph-table-dutch.md)
 + [English, Australian \(en\-AU\)](ph-table-english-au.md)
@@ -13,6 +17,7 @@ This section provides phoneme/viseme tables for the languages supported by Amazo
 + [French \(fr\-FR\)](ph-table-french.md)
 + [French, Canadian \(fr\-CA\)](ph-table-french-ca.md)
 + [German \(de\-DE\)](ph-table-german.md)
++ [Hindi \(hi\-IN\)](ph-table-hindi.md)
 + [Icelandic \(is\-IS\)](ph-table-icelandic.md)
 + [Italian \(it\-IT\)](ph-table-italian.md)
 + [Japanese \(ja\-JP\)](ph-table-japanese.md)
@@ -24,6 +29,7 @@ This section provides phoneme/viseme tables for the languages supported by Amazo
 + [Romanian \(ro\-RO\)](ph-table-romanian.md)
 + [Russian \(ru\-RU\)](ph-table-russian.md)
 + [Spanish \(es\-ES\)](ph-table-spanish.md)
++ [Spanish, Mexican \(es\-MX\)](ph-table-mexican.md)
 + [Spanish, US \(es\-US\)](ph-table-spanish-us.md)
 + [Swedish \(sv\-SE\)](ph-table-swedish.md)
 + [Turkish \(tr\-TR\)](ph-table-turkish.md)

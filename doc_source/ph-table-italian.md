@@ -41,3 +41,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | o | o | close\-mid back rounded vowel | cent**o** | o | 
 | ɔ | O | open\-mid back rounded vowel | **o**tto | O | 
 | u | u | close back rounded vowel | **u**no | u | 
+|  **Additional Symbols**  | 
+| ˈ | " | primary stress | Ala**ba**ma |  | 
+| ˌ | % | secondary stress | **A**labama |  | 
+| \. | \. | syllable boundary | A\.la\.ba\.ma |  | 

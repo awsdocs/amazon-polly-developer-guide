@@ -31,7 +31,5 @@ The following is a sample response\. In addition to the lexicon content, the res
 ```
 
 ## Additional Code Samples for the GetLexicon API<a name="gs-get-lexicon-example-4"></a>
-
 + Java Sample: [GetLexicon](GetLexiconSample.md)
-
 + Python \(Boto3\) Sample: [GetLexicon](GetLexiconSamplePython.md)

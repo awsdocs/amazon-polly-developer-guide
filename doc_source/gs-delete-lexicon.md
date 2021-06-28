@@ -10,7 +10,5 @@ aws polly delete-lexicon \
 ```
 
 ## Additional Code Samples for the DeleteLexicon API<a name="gs-delete-lexicon-example-4"></a>
-
 + Java Sample: [DeleteLexicon](DeleteLexiconSample.md)
-
 + Python \(Boto3\) Sample: [DeleteLexicon](DeleteLexiconPython.md)

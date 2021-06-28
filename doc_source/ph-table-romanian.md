@@ -40,3 +40,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | oa | o\_^a | diphthong | **oa**re | o | 
 | u | u | close back rounded vowel | **u**nde | u | 
 | ɨ | 1 | close central unrounded vowel | Rom**â**nia | i | 
+|  **Additional Symbols**  | 
+| ˈ | " | primary stress | Ala**ba**ma |  | 
+| ˌ | % | secondary stress | **A**labama |  | 
+| \. | \. | syllable boundary | A\.la\.ba\.ma |  | 

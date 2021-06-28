@@ -52,3 +52,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | ʊ | U | near\-close near\-back rounded vowel | b**o**tt | u | 
 | y | y | close front rounded vowel | b**y**tt | u | 
 | y: | y: | long close front rounded vowel | s**y**l, s**y**l | u | 
+|  **Additional Symbols**  | 
+| ˈ | " | primary stress | Ala**ba**ma |  | 
+| ˌ | % | secondary stress | **A**labama |  | 
+| \. | \. | syllable boundary | A\.la\.ba\.ma |  | 

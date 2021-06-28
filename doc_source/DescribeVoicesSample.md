@@ -2,7 +2,7 @@
 
 The following Java code sample show how to use Java\-based applications to produce a list of the voices that are available for use when requesting speech synthesis\. You can optionally specify a language code to filter the available voices\. For example, if you specify en\-US, the operation returns a list of all available US English voices\.
 
-For more information on this operation, see the reference for the [http://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html](http://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html) API\. 
+For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html](https://docs.aws.amazon.com/polly/latest/dg/API_DescribeVoices.html) API\. 
 
 ```
 package com.amazonaws.polly.samples;

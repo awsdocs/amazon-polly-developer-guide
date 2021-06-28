@@ -2,6 +2,8 @@
 
 Amazon Polly provides the [ListLexicons](API_ListLexicons.md) API operation that you can use to get the list of pronunciation lexicons in your account in a specific AWS Region\. The following AWS CLI call lists the lexicons in your account in the us\-east\-2 region\.
 
+
+
 ```
 aws polly list-lexicons
 ```
@@ -38,7 +40,5 @@ The following is an example response, showing two lexicons named `w3c` and `toma
 ```
 
 ## Additional Code Samples for the ListLexicon API<a name="gs-list-lexicon-example-4"></a>
-
 + Java Sample: [ListLexicons](ListLexiconsSample.md)
-
 + Python \(Boto3\) Sample: [ListLexicon](ListLexiconSamplePython.md)

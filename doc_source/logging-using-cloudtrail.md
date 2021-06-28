@@ -1,50 +1,40 @@
 # Logging Amazon Polly API Calls with AWS CloudTrail<a name="logging-using-cloudtrail"></a>
 
-Amazon Polly is integrated with CloudTrail, a service that captures all of the Amazon Polly API calls and delivers the log files to an Amazon S3 bucket that you specify\. CloudTrail captures API calls from the Amazon Polly console or from your code to the Amazon Polly APIs\. Using the information collected by CloudTrail, you can determine the request that was made to Amazon Polly, the source IP address from which the request was made, who made the request, when it was made, and so on\. 
+Amazon Polly is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Amazon Polly\. CloudTrail captures all API calls for Amazon Polly as events\. The calls captured include calls from the Amazon Polly console and code calls to the Amazon Polly API operations\. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Amazon Polly\. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**\. Using the information collected by CloudTrail, you can determine the request that was made to Amazon Polly, the IP address from which the request was made, who made the request, when it was made, and additional details\. 
 
-To learn more about CloudTrail, including how to configure and enable it, see the [AWS CloudTrail User Guide](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\.
+To learn more about CloudTrail, including how to configure and enable it, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\.
 
-## Amazon Polly Information in CloudTrail<a name="parrot-info-in-cloudtrail"></a>
+## Amazon Polly Information in CloudTrail<a name="service-name-info-in-cloudtrail"></a>
 
-When CloudTrail logging is enabled in your AWS account, API calls made to Amazon Polly actions are tracked in CloudTrail log files, where they are written with other AWS service records\. CloudTrail determines when to create and write to a new file based on a time period and file size\.
+CloudTrail is enabled on your AWS account when you create the account\. When supported event activity occurs in Amazon Polly, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**\. You can view, search, and download recent events in your AWS account\. For more information, see [Viewing Events with CloudTrail Event History](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html)\. 
 
-All Amazon Polly actions are logged by CloudTrail and are documented in the [Amazon Polly API Reference](API_Reference.md)\. The following actions are supported\.
+For an ongoing record of events in your AWS account, including events for Amazon Polly, create a trail\. A *trail* enables CloudTrail to deliver log files to an Amazon S3 bucket\. By default, when you create a trail in the console, the trail applies to all AWS Regions\. The trail logs events from all Regions in the AWS partition and delivers the log files to the Amazon S3 bucket that you specify\. Additionally, you can configure other AWS services to further analyze and act upon the event data collected in CloudTrail logs\. For more information, see the following: 
++ [Overview for Creating a Trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail.html)
++ [CloudTrail Supported Services and Integrations](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-aws-service-specific-topics.html#cloudtrail-aws-service-specific-topics-integrations)
++ [Configuring Amazon SNS Notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/getting_notifications_top_level.html)
++ [Receiving CloudTrail Log Files from Multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail Log Files from Multiple Accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
+Amazon Polly supports logging the following actions as events in CloudTrail log files:
 + [DeleteLexicon](API_DeleteLexicon.md)
-
 + [DescribeVoices](API_DescribeVoices.md)
-
 + [GetLexicon](API_GetLexicon.md)
-
++ [GetSpeechSynthesisTask](API_GetSpeechSynthesisTask.md)
 + [ListLexicons](API_ListLexicons.md)
-
++ [ListSpeechSynthesisTasks](API_ListSpeechSynthesisTasks.md)
 + [PutLexicon](API_PutLexicon.md)
-
++ [StartSpeechSynthesisTask](API_StartSpeechSynthesisTask.md)
 + [SynthesizeSpeech](API_SynthesizeSpeech.md)
 
-Every log entry contains information about who generated the request\. The user identity information in the log entry helps you determine the following: 
+Every event or log entry contains information about who generated the request\. The identity information helps you determine the following: 
++ Whether the request was made with root or AWS Identity and Access Management \(IAM\) user credentials\.
++ Whether the request was made with temporary security credentials for a role or federated user\.
++ Whether the request was made by another AWS service\.
 
-+ Whether the request was made with root or IAM user credentials
+For more information, see the [CloudTrail userIdentity Element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)\.
 
-+ Whether the request was made with temporary security credentials for a role or federated user
+## Example: Amazon Polly Log File Entries<a name="understanding-service-name-entries"></a>
 
-+ Whether the request was made by another AWS service
-
-For more information, see the [CloudTrail userIdentity Element](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)\.
-
-You can store your log files in your Amazon S3 bucket for as long as you want, but you can also define Amazon S3 lifecycle rules to archive or delete log files automatically\. By default, your log files are encrypted with Amazon S3 server\-side encryption \(SSE\)\.
-
-If you want to be notified upon log file delivery, you can configure CloudTrail to publish Amazon SNS notifications when new log files are delivered\. For more information, see [Configuring Amazon SNS Notifications for CloudTrail](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/getting_notifications_top_level.html)\.
-
-You can also aggregate Amazon Polly log files from multiple AWS regions and multiple AWS accounts into a single Amazon S3 bucket\. 
-
-For more information, see [Receiving CloudTrail Log Files from Multiple Regions](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html) and [Receiving CloudTrail Log Files from Multiple Accounts](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)\.
-
-## Understanding Amazon Polly Log File Entries<a name="understanding-parrot-entries"></a>
-
-CloudTrail log files can contain one or more log entries\. Each entry lists multiple JSON\-formatted events\. A log entry represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on\. Log entries are not an ordered stack trace of the public API calls, so they do not appear in any specific order\. 
-
-Because of potential confidentiality issues, log entries do not contain the synthesized text\. Instead, this text is redacted in the log entry\.
+ A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify\. CloudTrail log files contain one or more log entries\. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on\. CloudTrail log files aren't an ordered stack trace of the public API calls, so they don't appear in any specific order\.
 
 The following example shows a CloudTrail log entry that demonstrates the `SynthesizeSpeech`\.
 
@@ -55,7 +45,7 @@ The following example shows a CloudTrail log entry that demonstrates the `Synthe
             "awsRegion": "us-east-2", 
             "eventID": "19bd70f7-5e60-4cdc-9825-936c552278ae", 
             "eventName": "SynthesizeSpeech", 
-            "eventSource": "tts.amazonaws.com", 
+            "eventSource": "polly.amazonaws.com", 
             "eventTime": "2016-11-02T03:49:39Z", 
             "eventType": "AwsApiCall", 
             "eventVersion": "1.05", 
@@ -90,5 +80,3 @@ The following example shows a CloudTrail log entry that demonstrates the `Synthe
     ]
 }
 ```
-
-The `eventName` element identifies the action that occurred and may include date and version information, such as `"SynthesizeSpeech20161128"`, nevertheless it is still referring to the same public API\.

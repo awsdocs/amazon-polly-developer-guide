@@ -2,6 +2,8 @@
 
 The following Python code example uses the AWS SDK for Python \(Boto\) to list the lexicons in your account in the region specified in your local AWS configuration\. For information about creating the configuration file, see [Step 3\.1: Set Up the AWS Command Line Interface \(AWS CLI\)](setup-aws-cli.md)\. 
 
+For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html](https://docs.aws.amazon.com/polly/latest/dg/API_ListLexicons.html) API\. 
+
 ```
 import sys
 

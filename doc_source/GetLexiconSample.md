@@ -2,7 +2,7 @@
 
 The following Java code sample show how to use Java\-based applications to produce the content of a specific pronunciation lexicon stored in a AWS Region\. 
 
-For more information on this operation, see the reference for the [http://docs.aws.amazon.com/polly/latest/dg/API_GetLexicon.html](http://docs.aws.amazon.com/polly/latest/dg/API_GetLexicon.html) API\. 
+For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/dg/API_GetLexicon.html](https://docs.aws.amazon.com/polly/latest/dg/API_GetLexicon.html) API\. 
 
 ```
 package com.amazonaws.polly.samples;

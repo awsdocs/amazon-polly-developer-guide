@@ -2,7 +2,7 @@
 
 The following Java code sample show how to use Java\-based applications to store a pronunciation lexicon in an AWS Region\.
 
-For more information on this operation, see the reference for the [http://docs.aws.amazon.com/polly/latest/dg/API_PutLexicon.html](http://docs.aws.amazon.com/polly/latest/dg/API_PutLexicon.html) API\. 
+For more information on this operation, see the reference for the [https://docs.aws.amazon.com/polly/latest/dg/API_PutLexicon.html](https://docs.aws.amazon.com/polly/latest/dg/API_PutLexicon.html) API\. 
 
 ```
 package com.amazonaws.polly.samples;

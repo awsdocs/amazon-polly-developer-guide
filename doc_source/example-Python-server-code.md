@@ -209,7 +209,8 @@ class ChunkedHTTPRequestHandler(BaseHTTPRequestHandler):
                 # Request speech synthesis
                 response = polly.synthesize_speech(Text=text,
                                                     VoiceId=voiceId,
-                                                    OutputFormat=outputFormat)
+                                                    OutputFormat=outputFormat,
+                                                    Engine="neural")
             except (BotoCoreError, ClientError) as err:
                 # The service returned an error
                 raise HTTPStatusError(HTTP_STATUS["INTERNAL_SERVER_ERROR"],

@@ -28,19 +28,15 @@ Consider the following W3C PLS\-compliant lexicon\.
 ```
 
 Note the following:
-
 + The two attributes specified in the `<lexicon>` element:
-
   + The `xml:lang` attribute specifies the language code, `en-US`, to which the lexicon applies\. Amazon Polly can use this example lexicon if the voice you specify in the `SynthesizeSpeech` call has the same language code \(en\-US\)\. 
 **Note**  
 You can use the `DescribeVoices` operation to find the language code associated with a voice\.
 
-     
-
+     
   + The `alphabet` attribute specifies `IPA`, which means that the International Phonetic Alphabet \(IPA\) alphabet is used for pronunciations\. IPA is one of the alphabets for writing pronunciations\. Amazon Polly also supports the Extended Speech Assessment Methods Phonetic Alphabet \(X\-SAMPA\)\.
 
-     
-
+     
 + The `<lexeme>` element describes the mapping between `<grapheme>` \(that is, a textual representation of the word\) and `<alias>`\. 
 
 To test this lexicon, do the following:
@@ -117,9 +113,7 @@ In this example, the lexeme that you specify in the lexicon applies exclusively 
 ```
 
 The lexicon specifies three lexemes, two of which define an alias for the grapheme W3C as follows:
-
 + The first `<lexeme`> element defines an alias \(World Wide Web Consortium\)\.
-
 + The second `<lexeme>` defines an alternative alias \(WWW Consortium\)\. 
 
 Amazon Polly uses the first replacement for any given grapheme in a lexicon\.
@@ -133,13 +127,11 @@ The W3C is a Consortium
 ```
 
 `SynthesizeSpeech` first applies the lexicon as follows: 
-
 + As per the first lexeme, the word W3C is revised as World Wide Web Consortium\. The revised text appears as follows:
 
   ```
   The World Wide Web Consortium is a Consortium
   ```
-
 + The alias defined in the third lexeme applies only to the word Consortium that was part of the original text, resulting in the following text:
 
   ```
@@ -175,6 +167,8 @@ You can test this using the AWS CLI as follows:
    speech.mp3
    ```
 
+   
+
 1. Play the resulting `speech.mp3` file to verify that the synthesized speech reflects the text changes\.
 
 ## Example 3: Specifying Multiple Lexicons<a name="gs-put-lexicon-example-3"></a>
@@ -182,7 +176,6 @@ You can test this using the AWS CLI as follows:
 In a call to `SynthesizeSpeech`, you can specify multiple lexicons\. In this case, the first lexicon specified \(in order from left to right\) overrides any preceding lexicons\.
 
 Consider the following two lexicons\. Note that each lexicon describes different aliases for the same grapheme W3C\. 
-
 + Lexicon 1: `w3c.pls`
 
   ```
@@ -199,7 +192,6 @@ Consider the following two lexicons\. Note that each lexicon describes different
     </lexeme>
   </lexicon>
   ```
-
 + Lexicon 2: `w3cAlternate.pls`
 
   ```
@@ -218,12 +210,13 @@ Consider the following two lexicons\. Note that each lexicon describes different
   </lexicon>
   ```
 
+  
+
 Suppose you store these lexicons as `w3c` and `w3cAlternate` respectively\. If you specify lexicons in order \(`w3c` followed by `w3cAlternate`\) in a `SynthesizeSpeech` call, the alias for W3C defined in the first lexicon has precedence over the second\. To test the lexicons, do the following:
 
 1. Save the lexicons locally in files called `w3c.pls` and `w3cAlternate.pls`\.
 
 1. Upload these lexicons using the `put-lexicon` AWS CLI command\.
-
    + Upload the `w3c.pls` lexicon and store it as `w3c`\.
 
      ```
@@ -231,7 +224,6 @@ Suppose you store these lexicons as `w3c` and `w3cAlternate` respectively\. If y
      --name w3c \
      --content file://w3c.pls
      ```
-
    + Upload the` w3cAlternate.pls` lexicon on the service as `w3cAlternate`\.
 
      ```
@@ -239,6 +231,8 @@ Suppose you store these lexicons as `w3c` and `w3cAlternate` respectively\. If y
      --name w3cAlternate \
      --content file://w3cAlternate.pls
      ```
+
+   
 
 1. Run the `synthesize-speech` command to synthesize sample text to an audio stream \(`speech.mp3`\), and specify both lexicons using the `lexicon-name` parameter\. 
 
@@ -257,8 +251,8 @@ Suppose you store these lexicons as `w3c` and `w3cAlternate` respectively\. If y
    PLS is a World Wide Web Consortium recommendation
    ```
 
+   
+
 ## Additional Code Samples for the PutLexicon API<a name="gs-put-lexicon-example-4"></a>
-
 + Java Sample: [PutLexicon](PutLexiconSample.md)
-
 + Python \(Boto3\) Sample: [PutLexicon](PutLexiconSamplePython.md)

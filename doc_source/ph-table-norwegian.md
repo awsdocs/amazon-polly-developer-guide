@@ -50,3 +50,7 @@ The following chart lists the full set of International Phonetic Alphabet \(IPA\
 | ʊ | U | near\-close near\-back rounded vowel | b**u**kk | u | 
 | y: | y: | long close front rounded vowel | l**y**n | u | 
 | ʏ | Y | near\-close near\-front rounded vowel | l**y**nne | u | 
+|  **Additional Symbols**  | 
+| ˈ | " | primary stress | Ala**ba**ma |  | 
+| ˌ | % | secondary stress | **A**labama |  | 
+| \. | \. | syllable boundary | A\.la\.ba\.ma |  | 

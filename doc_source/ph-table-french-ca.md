@@ -21,7 +21,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | ɲ | J | palatal nasal | bai**gn**er | J | 
 | ŋ | N | velar nasal | parki**ng** | k | 
 | p | p | voiceless bilabial plosive | **p**omme | p | 
-| ʀ | R\\ | uvular trill | amou**r**eux | k | 
+| ʁ | R | voiced uvular fricative | amou**r**eux | k | 
 | s | s | voiceless alveolar fricative | **s**anté | s | 
 | ʃ | S | voiceless postalveolar fricative | **ch**at | S | 
 | t | t | voiceless alveolar plosive | **t**éléphone | t | 
@@ -40,8 +40,12 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | ɛ | E | open\-mid front unrounded vowel | n**ei**ge | E | 
 | ɛ̃ | E\~ | nasal open\-mid front unrounded vowel | sap**in** | E | 
 | i | i | close front unrounded vowel | m**i**lle | i | 
-| o | o | close\-mid back rounded vowel | h**o**mme | o | 
-| ɔ | O | open\-mid back rounded vowel | h**ô**pital | O | 
+| o | o | close\-mid back rounded vowel | h**ô**pital | o | 
+| ɔ | O | open\-mid back rounded vowel | h**o**mme | O | 
 | ɔ̃ | O\~ | nasal open\-mid back rounded vowel | b**on** | O | 
 | u | u | close back rounded vowel | s**ou**s | u | 
 | y | y | close front rounded vowel | d**u**r | u | 
+|  **Additional Symbols**  | 
+| ˈ | " | primary stress | Ala**ba**ma |  | 
+| ˌ | % | secondary stress | **A**labama |  | 
+| \. | \. | syllable boundary | A\.la\.ba\.ma |  | 
