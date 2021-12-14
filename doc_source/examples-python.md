@@ -4,7 +4,7 @@ This example application consists of the following:
 + An HTTP 1\.1 server using the HTTP chunked transfer coding \(see [Chunked Transfer Coding](https://tools.ietf.org/html/rfc2616#section-3.6.1)\)
 + A simple HTML5 user interface that interacts with the HTTP 1\.1 server \(shown below\):
 
-     
+     
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/polly/latest/dg/images/app1-10.png)
 
 The goal of this example is to show how to use Amazon Polly to stream speech from a browser\-based HTML5 application\. Consuming the audio stream produced by Amazon Polly as the text gets synthesized is the recommended approach for use cases where responsiveness is an important factor \(for example, dialog systems, screen readers, etc\.\)\.

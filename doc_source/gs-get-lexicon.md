@@ -1,6 +1,6 @@
 # Using the GetLexicon Operation<a name="gs-get-lexicon"></a>
 
-Amazon Polly provides the [GetLexicon](API_GetLexicon.md) API operation to retrieve the content of a pronunciation lexicon you stored in your account in a specific region\. 
+Amazon Polly provides the [ GetLexicon ](API_GetLexicon.md) API operation to retrieve the content of a pronunciation lexicon you stored in your account in a specific region\. 
 
 The following `get-lexicon` AWS CLI command retrieves the content of the `example` lexicon\.
 

@@ -16,6 +16,8 @@ For in\-depth tables showing the phonemes and visemes associated with each langu
 | [English, Australian](ph-table-english-au.md) | en\-AU | 
 | [English, British](ph-table-english-uk.md) | en\-GB | 
 | [English, Indian](ph-table-english-in.md) | en\-IN | 
+| [English, New Zealand](ph-table-english-nz.md) | en\-NZ | 
+| [English, South African](ph-table-english-za.md) | en\-ZA | 
 | [English, US](ph-table-english-us.md) | en\-US | 
 | [English, Welsh](ph-table-english-wls.md) | en\-GB\-WLS | 
 | [French](ph-table-french.md) | fr\-FR | 

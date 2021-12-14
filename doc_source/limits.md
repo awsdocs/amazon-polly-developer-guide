@@ -30,7 +30,7 @@ Note the following limits related to using the `SynthesizeSpeech` API operation:
 + You can specify up to five lexicons to apply to the input text\.
 + The output audio stream \(synthesis\) is limited to 10 minutes\. After this is reached, any remaining speech is cut off\.
 
-For more information, see [SynthesizeSpeech](API_SynthesizeSpeech.md)\. 
+For more information, see [ SynthesizeSpeech ](API_SynthesizeSpeech.md)\. 
 
 **Note**  
 Some limitations of the `SynthesizeSpeech` API operation can be bypassed using the `StartSythensizeSpeechTask` API operation\. For more information, see [Creating Long Audio Files](asynchronous.md)\. 

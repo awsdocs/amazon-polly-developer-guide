@@ -1,10 +1,16 @@
 # Document History for Amazon Polly<a name="doc-history"></a>
 
 The following table describes important changes in each release of the *Amazon Polly Developer Guide*\. For notification about updates to this documentation, you can subscribe to an RSS feed\. 
-+ **Latest documentation update: **June 28, 2021
++ **Latest documentation update: **December 6, 2021
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New voice added for NTTS](#doc-history) | Amazon Polly now provides the Japanese voice Takumi as an NTTS voice\. See [Neural voices](https://docs.aws.amazon.com/polly/latest/dg/ntts-voices-main.html) for a list of NTTS voices\. | December 6, 2021 | 
+| [New voice added for NTTS](#doc-history) | Amazon Polly now provides the French voice Léa as an NTTS voice\. See [Neural voices](https://docs.aws.amazon.com/polly/latest/dg/ntts-voices-main.html) for a list of NTTS voices\. | November 18, 2021 | 
+| [New voices added for NTTS](#doc-history) | Amazon Polly now provides the Italian voice Bianca and the European Spanish voice Lucia as NTTS voices\. See [Neural voices](https://docs.aws.amazon.com/polly/latest/dg/ntts-voices-main.html) for a list of NTTS voices\. | November 8, 2021 | 
+| [New voice added for NTTS](#doc-history) | Amazon Polly now provides a new South African English voice, Ayanda\. The voice is available as an NTTS voice only\. See [Neural voices](https://docs.aws.amazon.com/polly/latest/dg/ntts-voices-main.html) for a list of NTTS voices\. | September 1, 2021 | 
+| [New Region added](#doc-history) | Amazon Polly is now available in the Africa \(Cape Town\) AWS Region\. This Region supports neural TTS \(NTTS\)\. For more information, see [Feature and Region Compatibility](https://docs.aws.amazon.com/polly/latest/dg/NTTS-main.html#ntts-regions) for a list of regions that support NTTS\. | September 1, 2021 | 
+| [New language and voice added](#doc-history) | Amazon Polly now supports New Zealand English \(en\-NZ\)\. A new NTTS voice, Aria, speaks New Zealand English and a selection of Maori words\. | August 24, 2021 | 
 | [New feature](#doc-history) | Amazon Polly makes the conversational speaking style the default version for the neural Matthew and Joanna voices\. We removed references to the conversational speaking style\. | June 28, 2021 | 
 | [New voice added for NTTS](#doc-history) | Amazon Polly now provides the German voice Vicki as an NTTS voice\. | June 15, 2021 | 
 | [New voice added](#doc-history) | A new female voice, Gabrielle, has been added to the French \(Canadian\) \(fr\-CA\) locale\. The voice is high quality and only available as an NTTS voice\. Like all neural voices, it is only available in certain regions\. For a list of regions, see [Feature and region compatibility](https://docs.aws.amazon.com/polly/latest/dg/NTTS-main.html#ntts-regions)\. | June 1, 2021 | 

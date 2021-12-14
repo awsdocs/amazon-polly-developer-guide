@@ -1,6 +1,6 @@
 # Using the PutLexicon Operation<a name="gs-put-lexicon"></a>
 
-With Amazon Polly, you can use [PutLexicon](API_PutLexicon.md) to store pronunciation lexicons in a specific AWS Region for your account\. Then, you can specify one or more of these stored lexicons in your [SynthesizeSpeech](API_SynthesizeSpeech.md) request that you want to apply before the service starts synthesizing the text\. For more information, see [Managing Lexicons](managing-lexicons.md)\.
+With Amazon Polly, you can use [ PutLexicon ](API_PutLexicon.md) to store pronunciation lexicons in a specific AWS Region for your account\. Then, you can specify one or more of these stored lexicons in your [ SynthesizeSpeech ](API_SynthesizeSpeech.md) request that you want to apply before the service starts synthesizing the text\. For more information, see [Managing Lexicons](managing-lexicons.md)\.
 
 This section provides example lexicons and step\-by\-step instructions for storing and testing them\.
 
@@ -33,10 +33,10 @@ Note the following:
 **Note**  
 You can use the `DescribeVoices` operation to find the language code associated with a voice\.
 
-     
+     
   + The `alphabet` attribute specifies `IPA`, which means that the International Phonetic Alphabet \(IPA\) alphabet is used for pronunciations\. IPA is one of the alphabets for writing pronunciations\. Amazon Polly also supports the Extended Speech Assessment Methods Phonetic Alphabet \(X\-SAMPA\)\.
 
-     
+     
 + The `<lexeme>` element describes the mapping between `<grapheme>` \(that is, a textual representation of the word\) and `<alias>`\. 
 
 To test this lexicon, do the following:

@@ -10,7 +10,7 @@ Users have the same listening experience regardless of where you store your audi
 
 1. If you use CloudFront, the files are stored on Amazon S3 and are broadcast with CloudFront\. 
 
- 
+ 
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/polly/latest/dg/images/chart.png)
 

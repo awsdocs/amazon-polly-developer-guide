@@ -37,7 +37,7 @@ To request speech marks for input text, use the `synthesize-speech` command\. Be
   MaryLamb.txt 
   ```
 
- 
+ 
 
 The following AWS CLI example is formatted for Unix, Linux, and macOS\. For Windows, replace the backslash \(\\\) Unix continuation character at the end of each line with a caret \(^\) and use full quotation marks \("\) around the input text with single quotes \('\) for interior tags\.
 
@@ -73,4 +73,4 @@ The described word \("had"\) begins 373 milliseconds after the audio stream begi
 **Note**  
 This metadata is for the `Joanna` voice\-id\. If you use another voice with the same input text, the metadata might differ\.
 
- 
+ 

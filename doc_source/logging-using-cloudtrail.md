@@ -15,15 +15,15 @@ For an ongoing record of events in your AWS account, including events for Amazon
 + [Receiving CloudTrail Log Files from Multiple Regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail Log Files from Multiple Accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
 Amazon Polly supports logging the following actions as events in CloudTrail log files:
-+ [DeleteLexicon](API_DeleteLexicon.md)
-+ [DescribeVoices](API_DescribeVoices.md)
-+ [GetLexicon](API_GetLexicon.md)
-+ [GetSpeechSynthesisTask](API_GetSpeechSynthesisTask.md)
-+ [ListLexicons](API_ListLexicons.md)
-+ [ListSpeechSynthesisTasks](API_ListSpeechSynthesisTasks.md)
-+ [PutLexicon](API_PutLexicon.md)
-+ [StartSpeechSynthesisTask](API_StartSpeechSynthesisTask.md)
-+ [SynthesizeSpeech](API_SynthesizeSpeech.md)
++ [ DeleteLexicon ](API_DeleteLexicon.md)
++ [ DescribeVoices ](API_DescribeVoices.md)
++ [ GetLexicon ](API_GetLexicon.md)
++ [ GetSpeechSynthesisTask ](API_GetSpeechSynthesisTask.md)
++ [ ListLexicons ](API_ListLexicons.md)
++ [ ListSpeechSynthesisTasks ](API_ListSpeechSynthesisTasks.md)
++ [ PutLexicon ](API_PutLexicon.md)
++ [ StartSpeechSynthesisTask ](API_StartSpeechSynthesisTask.md)
++ [ SynthesizeSpeech ](API_SynthesizeSpeech.md)
 
 Every event or log entry contains information about who generated the request\. The identity information helps you determine the following: 
 + Whether the request was made with root or AWS Identity and Access Management \(IAM\) user credentials\.

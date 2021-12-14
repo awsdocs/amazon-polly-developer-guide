@@ -22,7 +22,7 @@ The following table lists the International Phonetic Alphabet \(IPA\) phonemes, 
 | m | m | bilabial nasal | **m**ouse | p | 
 | m̩ | m= | syllabic bilabial nasal | anth**em** | p | 
 | n | n | alveolar nasal | **n**ap | t | 
-| n̩ | n= | syllabic alveolar nasal | **n**ap | t | 
+| n̩ | n= | syllabic alveolar nasal | butto**n** | t | 
 | ŋ | N | velar nasal | thi**ng** | k | 
 | p | p | voiceless bilabial plosive | **p**in | p | 
 | ɹ | r\\ | alveolar approximant | **r**ed | r | 

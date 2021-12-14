@@ -16,12 +16,12 @@ Use the scroll bars to see the rest of the table\.
 
 | Amazon Polly API Operations | Required Permissions \(API Actions\) | Resources | 
 | --- | --- | --- | 
-|  [DeleteLexicon](API_DeleteLexicon.md)  |  `polly:DeleteLexicon`  |  `arn:aws:polly:region:account-id:lexicon/LexiconName`  | 
-|  [DescribeVoices](API_DescribeVoices.md)  |  `polly:DescribeVoices`  |  `*`  | 
-|  [GetLexicon](API_GetLexicon.md)  |  polly:GetLexicon  |  `arn:aws:polly:region:account-id:lexicon/LexiconName`  | 
-|  [ListLexicons](API_ListLexicons.md)  |  `polly:ListLexicons`  |  `arn:aws:polly:region:account-id:lexicon/*`  | 
-|  [PutLexicon](API_PutLexicon.md)  |  `polly:PutLexicon`  |  `*`  | 
-|  [SynthesizeSpeech](API_SynthesizeSpeech.md)  |  `polly:SynthesizeSpeech`  |  `*`  | 
+|  [ DeleteLexicon ](API_DeleteLexicon.md)  |  `polly:DeleteLexicon`  |  `arn:aws:polly:region:account-id:lexicon/LexiconName`  | 
+|  [ DescribeVoices ](API_DescribeVoices.md)  |  `polly:DescribeVoices`  |  `*`  | 
+|  [ GetLexicon ](API_GetLexicon.md)  |  polly:GetLexicon  |  `arn:aws:polly:region:account-id:lexicon/LexiconName`  | 
+|  [ ListLexicons ](API_ListLexicons.md)  |  `polly:ListLexicons`  |  `arn:aws:polly:region:account-id:lexicon/*`  | 
+|  [ PutLexicon ](API_PutLexicon.md)  |  `polly:PutLexicon`  |  `*`  | 
+|  [ SynthesizeSpeech ](API_SynthesizeSpeech.md)  |  `polly:SynthesizeSpeech`  |  `*`  | 
 
 Amazon Polly supports Identity\-based policies for actions at the resource\-level\. Therefore, the `Resource` value is indicated by the ARN\. For example: `arn:aws:polly:us-east-2:account-id:lexicon/*` as the `Resource` value specifies permissions on all owned lexicons within the `us-east-2` Region\.
 

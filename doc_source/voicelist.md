@@ -1,5 +1,7 @@
 # Voices in Amazon Polly<a name="voicelist"></a>
 
+Amazon Polly provides a number of different voices for you to use\. To hear example voices, see the [ Amazon Polly product overview](http://aws.amazon.com/polly)\. To hear a specific voice speak a sample that you provide, you can use the Amazon Polly console\. For instructions, see [Listening to the Voices](listening-voices.md)\. 
+
 ## Available Voices<a name="availablevoice-list"></a>
 
 Amazon Polly provides a variety of different voices in multiple languages for synthesizing speech from text\.
@@ -14,15 +16,17 @@ Amazon Polly provides a variety of different voices in multiple languages for sy
 |  **English \(Australian\) \(en\-AU\)** | Nicole Olivia Russell | Female Female Male | No Yes No | Yes No Yes | 
 |  **English \(British\) \(en\-GB\)** | Amy\*\* Emma Brian | Female Female Male | Yes Yes Yes | Yes Yes Yes | 
 |  **English \(Indian\) \(en\-IN\)** | Aditi\*  Raveena | Female Female | No No | Yes Yes | 
-|  **English \(US\) \(en\-US\)** | Ivy Joanna\*\* Kendra Kimberly Salli Joey Justin Kevin Matthew\*\*  | Female \(child\) Female Female Female Female Male Male \(child\) Male \(child\) Male | Yes Yes Yes Yes Yes Yes Yes Yes Yes | Yes Yes Yes Yes Yes Yes Yes No Yes | 
+|  **English \(New Zealand\) \(en\-NZ\)**  | Aria | Female | Yes | No | 
+|  **English \(South African\) \(en\-ZA\)** | Ayanda | Female | Yes | No | 
+|  **English \(US\) \(en\-US\)** | Ivy Joanna\*\* Kendra Kimberly Salli Joey Justin Kevin Matthew\*\*  | Female \(child\) Female Female Female Female Male Male \(child\) Male \(child\) Male | Yes Yes Yes Yes Yes Yes Yes Yes Yes | Yes Yes Yes Yes Yes Yes Yes No Yes | 
 |  **English \(Welsh\) \(en\-GB\-WLS\)** | Geraint | Male | No | Yes | 
-|  **French \(fr\-FR\)** | Céline/Celine Léa Mathieu | Female Female Male | No No No | Yes Yes Yes | 
+|  **French \(fr\-FR\)** | Céline/Celine Léa Mathieu | Female Female Male | No Yes No | Yes Yes Yes | 
 |  **French \(Canadian\) \(fr\-CA\)** |  Chantal Gabrielle  |  Female Female  |  No Yes  |  Yes No  | 
 |  **German \(de\-DE\)** | Marlene Vicki Hans | Female Female Male | No Yes No | Yes Yes Yes | 
 |  **Hindi \(hi\-IN\)** | Aditi\* | Female | No | Yes | 
 |  **Icelandic \(is\-IS\)** | Dóra/Dora Karl | Female Male | No No | Yes Yes | 
-|  **Italian \(it\-IT\)** | Carla Bianca Giorgio | Female Female Male | No No No | Yes Yes Yes | 
-|  **Japanese \(ja\-JP\)** | Mizuki Takumi | Female Male | No No | Yes Yes | 
+|  **Italian \(it\-IT\)** | Carla Bianca Giorgio | Female Female Male | No Yes No | Yes Yes Yes | 
+|  **Japanese \(ja\-JP\)** | Mizuki Takumi | Female Male | No Yes | Yes Yes | 
 |  **Korean \(ko\-KR\)** | Seoyeon | Female | Yes | Yes | 
 |  **Norwegian \(nb\-NO\)** | Liv | Female | No | Yes | 
 |  **Polish \(pl\-PL\)** | Ewa Maja Jacek Jan | Female Female Male Male | No No No No | Yes Yes Yes Yes | 
@@ -30,7 +34,7 @@ Amazon Polly provides a variety of different voices in multiple languages for sy
 |  **Portuguese \(European\) \(pt\-PT\)** | Inês/Ines Cristiano | Female Male | No No | Yes Yes | 
 |  **Romanian \(ro\-RO\)** | Carmen | Female | No | Yes | 
 |  **Russian \(ru\-RU\)** | Tatyana Maxim | Female Male | No No | Yes Yes | 
-|  **Spanish \(European\) \(es\-ES\)** | Conchita Lucia Enrique | Female Female Male | No No No | Yes Yes Yes | 
+|  **Spanish \(European\) \(es\-ES\)** | Conchita Lucia Enrique | Female Female Male | No Yes No | Yes Yes Yes | 
 |  **Spanish \(Mexican\) \(es\-MX\)** | Mia | Female | No | Yes | 
 |  **Spanish \(US\) \(es\-US\)** | Lupe\*\* Penélope/Penelope Miguel | Female Female Male |  Yes No No |  Yes Yes Yes | 
 |  **Swedish \(sv\-SE\)** | Astrid | Female | No | Yes | 
