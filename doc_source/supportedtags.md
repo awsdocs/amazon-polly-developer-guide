@@ -1,3 +1,6 @@
+
+<title>SSML Supported Tags</title>
+
 # Supported SSML Tags<a name="supportedtags"></a>
 
 Amazon Polly supports the following SSML tags:
@@ -7,25 +10,25 @@ Amazon Polly supports the following SSML tags:
 
 |  Action  |  SSML Tag  |  Availability with Neural Voices  | 
 | --- | --- | --- | 
-|  [Adding a Pause](#break-tag)  |  <break>  |  Full availability  | 
-|  [Emphasizing Words ](#emphasis-tag)  | <emphasis> |  Not available  | 
-|  [Specifying Another Language for Specific Words ](#lang-tag)  | <lang> |  Full availability  | 
-|  [Placing a Custom Tag in Your Text ](#custom-tag)  | <mark> |  Full availability  | 
-|  [Adding a Pause Between Paragraphs ](#p-tag)  |  <p>  |  Full availability  | 
-|  [Using Phonetic Pronunciation ](#phoneme-tag)  |  <phoneme>  |  Full availability  | 
-|  [Controlling Volume, Speaking Rate, and Pitch ](#prosody-tag)  |  <prosody>  |  Partial availability  | 
-|  [Setting a Maximum Duration for Synthesized Speech](#maxduration-tag)  |  <prosody amazon:max\-duration>  | Not available | 
-|  [Adding a Pause Between Sentences ](#s-tag)  |  <s>  |  Full availability  | 
-|  [Controlling How Special Types of Words Are Spoken ](#say-as-tag)  |  <say\-as>  | Partial availability | 
-|  [Identifying SSML\-Enhanced Text ](#speak-tag)  |  <speak>  |  Full availability  | 
-|  [Pronouncing Acronyms and Abbreviations ](#sub-tag)  |  <sub>  |  Full availability  | 
-|  [Improving Pronunciation by Specifying Parts of Speech ](#w-tag)  |  <w>  |  Full availability  | 
-|  [Adding the Sound of Breathing ](#breath-tag)  |  <amazon:auto\-breaths>  |  Not available  | 
-|  [Newscaster speaking style ](#newscaster-tag)  | <amazon:domain name="news"> |  Select neural voices only  | 
-|  [Adding Dynamic Range Compression ](#drc-tag)  |  <amazon:effect name="drc">  |  Full availability  | 
-|  [Speaking Softly ](#phonation-tag)  |  <amazon:effect phonation="soft">  |  Not available  | 
-|  [Controlling Timbre ](#vocaltractlength-tag)  |  <amazon:effect vocal\-tract\-length>  |  Not available  | 
-|  [Whispering ](#whispered-tag)  |  <amazon: effect name="whispered">  |  Not available  | 
+|  [Adding a Pause](#break-tag)  |  `<break>`  |  Full availability  | 
+|  [Emphasizing Words ](#emphasis-tag)  | `<emphasis>` |  Not available  | 
+|  [Specifying Another Language for Specific Words ](#lang-tag)  | `<lang>` |  Full availability  | 
+|  [Placing a Custom Tag in Your Text ](#custom-tag)  | `<mark>` |  Full availability  | 
+|  [Adding a Pause Between Paragraphs ](#p-tag)  |  `<p>`  |  Full availability  | 
+|  [Using Phonetic Pronunciation ](#phoneme-tag)  |  `<phoneme>`  |  Full availability  | 
+|  [Controlling Volume, Speaking Rate, and Pitch ](#prosody-tag)  |  `<prosody>`  |  Partial availability  | 
+|  [Setting a Maximum Duration for Synthesized Speech](#maxduration-tag)  |  `<prosody amazon:max\-duration>`  | Not available | 
+|  [Adding a Pause Between Sentences ](#s-tag)  |  `<s>`  |  Full availability  | 
+|  [Controlling How Special Types of Words Are Spoken ](#say-as-tag)  |  `<say-as>`  | Partial availability | 
+|  [Identifying SSML\-Enhanced Text ](#speak-tag)  |  `<speak>`  |  Full availability  | 
+|  [Pronouncing Acronyms and Abbreviations ](#sub-tag)  |  `<sub>`  |  Full availability  | 
+|  [Improving Pronunciation by Specifying Parts of Speech ](#w-tag)  |  `<w>`  |  Full availability  | 
+|  [Adding the Sound of Breathing ](#breath-tag)  |  `<amazon:auto\-breaths>`  |  Not available  | 
+|  [Newscaster speaking style ](#newscaster-tag)  | `<amazon:domain name="news">` |  Select neural voices only  | 
+|  [Adding Dynamic Range Compression ](#drc-tag)  |  `<amazon:effect name="drc">`  |  Full availability  | 
+|  [Speaking Softly ](#phonation-tag)  |  `<amazon:effect phonation="soft">`  |  Not available  | 
+|  [Controlling Timbre ](#vocaltractlength-tag)  |  `<amazon:effect vocal\-tract\-length>`  |  Not available  | 
+|  [Whispering ](#whispered-tag)  |  `<amazon: effect name="whispered">`  |  Not available  | 
 
 If you use unsupported SSML tags in either neural or standard format, you will get an error\. 
 
@@ -168,7 +171,7 @@ This tag can also be used as a substitute for the optional [DefaultLangCode](API
 
 This tag is supported by both neural and standard TTS formats\.
 
-To put a custom tag within the text, use the <mark> tag\. Amazon Polly takes no action on the tag, but returns the location of the tag in the SSML metadata\. This tag can be anything you want to call out, as long as it maintains the following format:
+To put a custom tag within the text, use the `<mark>` tag\. Amazon Polly takes no action on the tag, but returns the location of the tag in the SSML metadata\. This tag can be anything you want to call out, as long as it maintains the following format:
 
 ```
 <mark name="tag_name"/>
@@ -192,9 +195,7 @@ Amazon Polly might return the following SSML metadata:
 
 ## Adding a Pause Between Paragraphs<a name="p-tag"></a>
 
-*<p>*
-
-This tag is supported by both neural and standard TTS formats\.
+This tag `<p>` is supported by both neural and standard TTS formats\.
 
 To add a pause between paragraphs in your text, use the <p> tag\. Using this tag provides a longer pause than native speakers usually place at commas or the end of a sentence\. Use the <p> tag to enclose the paragraph:
 
@@ -485,15 +486,14 @@ For example, in the following block, the 600 millisecond break and the breaks ca
 
 ## Adding a Pause Between Sentences<a name="s-tag"></a>
 
-*<s>*
 
-This tag is supported by both neural and standard TTS formats\.
+This tag `<s>` is supported by both neural and standard TTS formats\.
 
 To add a pause between lines or sentences in your text, use the `<s>` tag\. Using this tag has the same effect as:
 + Ending a sentence with a period \(\.\)
 + Specifying a pause with `<break strength="strong"/>`
 
-Unlike the `<break>` tag, the <s> tag encloses the sentence\. This is useful for synthesizing speech that is organized in lines, rather than sentence, such as poetry\.
+Unlike the `<break>` tag, the `<s>` tag encloses the sentence\. This is useful for synthesizing speech that is organized in lines, rather than sentence, such as poetry\.
 
 In the following example, the `<s>` tag creates a short pause after both the first and second sentences\. The final sentence has no `<s>` tag, but it is also followed by a short pause because it ends with a period\.
 
