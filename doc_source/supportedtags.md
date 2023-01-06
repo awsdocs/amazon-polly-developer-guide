@@ -226,7 +226,7 @@ Two attributes are required with the `<phoneme>` tag\. They indicate the phoneti
 
 With the `<phoneme>` tag, Amazon Polly uses the pronunciation specified by the `ph` attribute instead of the standard pronunciation associated by default with the language used by the selected voice\.
 
-For instance, the word "pecan" can be pronounced two ways\. In the following example, “pecan” is assigned a different pronunciation in each line\. Amazon Polly pronounces pecan as specified in the `ph` attributes, instead of using the default pronunciation\.
+For instance, the word "pecan" can be pronounced two ways\. In the following example, "pecan" assigned a different pronunciation in each line\. Amazon Polly pronounces pecan as specified in the `ph` attributes, instead of using the default pronunciation\.
 
 International Phonetic Alphabet \(IPA\)
 
@@ -595,7 +595,7 @@ The following formats can be used with the `date` attribute\.
 
 **Telephone**
 
-Amazon Polly attempts to interpret the text you provide correctly based on the text’s formatting even without the `<say-as>` tag\. For example, if your text includes "202\-555\-1212," Amazon Polly interprets it as a 10\-digit telephone number and says each digit individually, with a brief pause for each dash\. In this case, you don't need to use `<say-as interpret-as="telephone">`\. However, if you provide the text “2025551212” and want Amazon Polly to say it as a phone number, you would specify `<say-as interpret-as="telephone">`\.
+Amazon Polly attempts to interpret the text you provide correctly based on the text’s formatting even without the `<say-as>` tag\. For example, if your text includes "202\-555\-1212," Amazon Polly interprets it as a 10\-digit telephone number and says each digit individually, with a brief pause for each dash\. In this case, you don't need to use `<say-as interpret-as="telephone">`\. However, if you provide the text "2025551212" and want Amazon Polly to say it as a phone number, you would specify `<say-as interpret-as="telephone">`\.
 
 The logic for interpreting each element is language\-specific\. For example, US and UK English differ in how phone numbers are pronounced \(in UK English, sequences of the same digit are grouped together, as in "double five" or "triple four"\)\. To see the difference, test the following example with a US voice and with a UK voice: 
 
@@ -963,7 +963,7 @@ This tag indicates that the input text should be spoken in a whispered voice rat
 This uses the following syntax:
 
 ```
-<amazon:effect name=”whispered”>text</amazon:effect>
+<amazon:effect name="whispered">text</amazon:effect>
 ```
 
 For example:
